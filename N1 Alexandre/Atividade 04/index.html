@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 01</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: rgb(255, 255, 255);
+            background-color: #470909;
+        }
+        #obs{
+            color: rgba(255, 255, 255, 0.466);
+            font-family: arial, sans-serif;
+            font-size: 10px;
+            font-style: italic;
+            letter-spacing: 0pt;
+            word-spacing: -0.2pt;
+            line-height: 0.3;
+        }
+        #btn {
+        font-family: arial;
+        color: #FFFFFF !important;
+        font-size: 13px;
+        text-shadow: 0px 0px 0px #FFFFFF;
+        box-shadow: 0px 0px 0px #AEF9E5;
+        padding: 4px 9px;
+        border-radius: 40px;
+        border: 2px inset #690909;
+        background: #8F1212;
+        }
+        #btn:hover {
+        color: #6A5F5F !important;
+        background: #5E3131;
+        }
+    </style>
+</head>
+<body>
+    <h1>Atividade 04</h1>
+    <p> Resolução Atividade 04</p>
+    <h3>Idades</h3>
+    <input type="text" id="txtNumeros">
+    <input type="button" id="btn"value="Calcular" onclick="calcularQuadrado()">
+    <p id="obs">Digite os numeros os separando com uma vírgula</p>
+
+    <script>
+
+        function calcularQuadrado(){
+        var numeros = document.getElementById("txtNumeros").value;
+        numeros = numeros.split(",");
+        for(i=0;i<numeros.length;i++){
+            quadrado = parseInt(numeros[i])*parseInt(numeros[i]);
+            window.alert("O quadrado de "+numeros[i]+ " é "+quadrado+"!");
+        }
+            
+        }
+
+    </script>
+</body>
+</html>
